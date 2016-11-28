@@ -1,12 +1,12 @@
 /* For testing only */
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}
+}*/
 
 /* End for testing */
 
@@ -29,11 +29,19 @@ body {
 h1 {
   font-family: 'Crimson Text', serif;
   font-weight: normal;
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: normal;
 }
 
 ul {
   overflow: hidden;
-  width: 50%;
+  width: 90%;
   display: block;
   margin: auto;
   padding: 0 0;
@@ -41,14 +49,127 @@ ul {
 
 }
 
-li {
+#small-logo-nav li {
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   list-style: none;
   display: inline-block;
   margin: 1em;
+  width: 20%;
+  line-height: normal;
 }
 
-.logo {
+a {
+  text-decoration: none;
+  color: #890101;
+}
+
+/*footer img {
+  width: 100%;
+}*/
+
+footer {
+  background: url('../img/ornament.png') 50% 0 repeat-x;
   clear: both;
+  padding: 40px 0px 20px;
+  text-align: center;
+}
+
+footer span {
+  margin-top: 10px;
+}
+
+.profiles {
+  display: block;
+  margin: auto;
+  width: 97%;
+  margin-left: 3%;
+}
+
+.profile-tile {
+  float: left;
+  padding: 0 0;
+  display: block;
+  margin: 5px 5px;
+  clear: right;
+  width: 45%;
+  max-width: 175px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+  font-size: 12px;
+}
+
+.profile-tile span {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.profile-tile img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.4);
+  margin-bottom: 3px;
+  /*max-width: 150px;*/
+}
+
+#large-logo-nav {
+  display: none;
+}
+
+#large-logo-nav ul {
+  text-align: center;
+}
+
+#large-logo-nav li {
+  font-family: 'Unna', serif;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+#main-logo {
+  display: block;
+  margin: 5% auto;
+  width: inherit;
+}
+
+@media only screen and (min-width: 400px) {
+  .profile-tile {
+    width: 30%;
+  }
+  /*.profile-tile img {
+    width: 45%;
+  }*/
+}
+
+@media only screen and (min-width: 600px) {
+  #small-logo-nav {
+    display: none;
+  }
+
+  #large-logo-nav {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+  }
+
+  #large-logo-nav ul, hr {
+    margin-left: 10%;
+  }
+
+  #content {
+    float: right;
+    width: 60%;
+    margin-left: 10%;
+  }
+
+  #main-logo {
+    position: relative;
+    top: -187px;
+    left: 23px;
+  }
 }
