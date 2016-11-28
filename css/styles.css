@@ -1,10 +1,28 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #E7E7E7;
   background-image: url("../img/rag.png");
   background-repeat: repeat-x;
   padding: 2em 0;
   font-family: 'Unna', serif;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -13,6 +31,24 @@ h1 {
   font-weight: normal;
 }
 
-#rag {
+ul {
+  overflow: hidden;
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 0 0;
+  text-align: center;
 
+}
+
+li {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  list-style: none;
+  display: inline-block;
+  margin: 1em;
+}
+
+.logo {
+  clear: both;
 }
