@@ -146,6 +146,7 @@ footer span {
 }
 
 @media only screen and (min-width: 600px) {
+
   #small-logo-nav {
     display: none;
   }
@@ -154,11 +155,25 @@ footer span {
     display: block;
     float: left;
     width: 30%;
+  }
+
+  #large-logo-nav li {
+    font-size: 12px;
     text-align: center;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+    padding: 10px 0;
   }
 
   #large-logo-nav ul, hr {
     margin-left: 10%;
+    max-width: 250px;
+  }
+
+  #large-logo-nav span {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
   }
 
   #content {
@@ -167,9 +182,13 @@ footer span {
     margin-left: 10%;
   }
 
-  #main-logo {
+  .logo {
     position: relative;
-    top: -187px;
-    left: 23px;
+  }
+
+  #main-logo {
+    position: absolute;
+    top: 6.5em;
+    left: 4em;
   }
 }
